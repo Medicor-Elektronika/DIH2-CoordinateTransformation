@@ -50,7 +50,7 @@ class InputGui:
         self.gp.append(self.create_labeled_entry(root, 2, 2, "a"))
         self.gp.append(self.create_labeled_entry(root, 3, 2, "t"))
 
-        self.gp.append(self.create_labeled_entry(root, 1, 4, "gv"))
+        self.gp.append(self.create_labeled_entry(root, 1, 4, "Grabber width"))
 
         # Laser point properties
         self.create_labeled_entry(root, 4, 0, "Laser point",columnspan=6, is_entry=False)
@@ -58,7 +58,7 @@ class InputGui:
         self.lp.append(self.create_labeled_entry(root, 6, 0, "y"))
         self.lp.append(self.create_labeled_entry(root, 7, 0, "z"))
 
-        self.lp.append(self.create_labeled_entry(root, 5, 4, "lf"))
+        self.lp.append(self.create_labeled_entry(root, 5, 4, "Focus length"))
 
 
         # Side selection

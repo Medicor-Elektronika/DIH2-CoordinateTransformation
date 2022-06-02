@@ -61,9 +61,9 @@ def coordinate_transformation(gp_data, lp_data, select_list):
     # GP_y=0
     # GP_z=500+Gripper
 
-    GP = np.array([[float(gp_data[0]), float(gp_data[4])],
-                   [float(gp_data[1]), float(gp_data[5])],
-                   [float(gp_data[2])+float(gp_data[3]), float(gp_data[6])]])
+    GP = np.array([[float(gp_data[0]), float(gp_data[3])],
+                   [float(gp_data[1]), float(gp_data[4])],
+                   [float(gp_data[2])+float(gp_data[6]), float(gp_data[5])]])
 
     # Estimated laser data
 
