@@ -28,7 +28,7 @@ def check_inputs(gp_data, lp_data):
     if len(gp_data) == 7 and len(lp_data) == 4:
         data_list = gp_data + lp_data
         for data in data_list:
-            if not is_float(data):
+            if not isfloat(data):
                 return "Non-numerical value"
         return True
     else:
@@ -130,14 +130,17 @@ def coordinate_transformation(gp_data, lp_data, select_list):
 
         # print(gcs_xyz[:,1])
 
-    print(range(len(gcs_xyz[0, :])))
+    output_list = []
     for i in range(len(gcs_xyz[0, :])):
-        print(select_list[i])
         if select_list[i] == True:
             akt_xyz = np.reshape(gcs_xyz[:, i], (3, 1))
             akt_oat = np.reshape(oat[:, i], (3, 1))
             akt_oat = akt_oat/math.pi*180+np.reshape(GP[:, 1], (3, 1))
             akt = np.column_stack((akt_xyz, akt_oat))
-            print(
-                "#", i+1, "side coordinates data (xyz [mm], oat [deg]):", "\r")
-            print(akt)
+            # print(
+            #     "#", i+1, "side coordinates data (xyz [mm], oat [deg]):", "\r")
+            # print(akt)
+            # print(akt[0,0])
+            output_list.append([i, akt])
+        
+    return output_list
