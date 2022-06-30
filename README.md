@@ -1,8 +1,8 @@
-# Incubator Canopy Coordinate Transformation
+# MediSCARA Robotic Transformation Calculator (MRTC)
 This easy-to-use Python program allows 3D coordinate transformations for robotic manufacturing of incubator canopies.
 
-## Running the program
-Just open a console on a PC with the requirements preinstalled and run the following:
+## Setup
+No setup operation is needed, just open a console on a PC with the requirements preinstalled and run the following:
 ```
 python3 main.py
 ```
