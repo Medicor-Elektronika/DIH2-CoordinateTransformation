@@ -21,7 +21,7 @@ Pillow 9.1.0
 Numpy 1.21.0
 ```
 
-## Licence
+## License
 
 >MIT License
 >
