@@ -1,6 +1,8 @@
 # MediSCARA Robotic Transformation Calculator (MRTC)
 This easy-to-use Python program allows 3D coordinate transformations for robotic manufacturing of incubator canopies.
 
+The software was codeveloped with HSMa.
+
 ## Setup
 No setup operation is needed, just open a console on a PC with the requirements preinstalled and run the following:
 ```
